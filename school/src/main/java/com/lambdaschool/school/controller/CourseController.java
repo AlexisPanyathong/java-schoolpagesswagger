@@ -17,6 +17,7 @@ public class CourseController
     @Autowired
     private CourseService courseService;
 
+    // GET request http://localhost:2019/courses
     @GetMapping(value = "/courses", produces = {"application/json"})
     public ResponseEntity<?> listAllCourses()
     {
